@@ -19,6 +19,13 @@
     <link href="{{ asset('admin/vendors/nprogress/nprogress.css') }}" rel="stylesheet">
     <!-- iCheck -->
     <link href="{{ asset('admin/vendors/iCheck/skins/flat/green.css') }}" rel="stylesheet">
+    <!-- Datatables -->
+    
+    <link href="{{ asset('admin/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('admin/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('admin/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('admin/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('admin/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- bootstrap-progressbar -->
     <link href="{{ asset('admin/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css') }}"
@@ -30,6 +37,14 @@
 
     <!-- Custom Theme Style -->
     <link href="{{ asset('admin/build/css/custom.min.css') }}" rel="stylesheet">
+    {{-- datetimepicker  --}}
+    <link href="{{ asset('admin/assets/css/jquery.datetimepicker.min.css') }}" rel="stylesheet">
+    <!-- Import CSS for Toastr -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+    <!-- Dropzone.js -->
+    <link href="{{ asset('admin/vendors/dropzone/dist/min/dropzone.min.css') }}" rel="stylesheet" />
+    {{-- Custom css by DevDien  --}}
+    <link href="{{ asset('admin/assets/css/custom-css.css') }}" rel="stylesheet" />
 </head>
 
 <body class="nav-md">

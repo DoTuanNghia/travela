@@ -5,14 +5,14 @@ namespace App\Http\Controllers\admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ContactManagementController extends Controller
+class AddToursController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('admin.contact');
+        return view('admin.add-tours');
     }
 
     /**

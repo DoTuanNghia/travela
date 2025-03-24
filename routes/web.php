@@ -20,6 +20,7 @@ use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\admin\LoginAdminController;
 use App\Http\Controllers\admin\ToursManagementController;
 use App\Http\Controllers\admin\UserManagementController;
+use App\Http\Controllers\admin\AddToursController;
 
 
 Route::get('/', [HomeController::class, 'index']) -> name('home');
@@ -40,8 +41,10 @@ Route::prefix('admin')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
     Route::get('/admin', [AdminManagementController::class, 'index'])->name('admin.admin');
     Route::get('/bookings', [BookingManagementController::class, 'index'])->name('admin.bookings');
-    Route::get('/contacts', [ContactManagementController::class, 'index'])->name('admin.contacts');
+    Route::get('/contact', [ContactManagementController::class, 'index'])->name('admin.contact');
+    Route::get('/page-add-tours', [AddToursController::class, 'index'])->name('admin.page-add-tours');
     Route::get('/tours', [ToursManagementController::class, 'index'])->name('admin.tours');
     Route::get('/users', [UserManagementController::class, 'index'])->name('admin.users');
     Route::get('/login', [LoginAdminController::class, 'index'])->name('admin.login');
+    
 });
